@@ -7,7 +7,8 @@ const request = require("request");
 const https = require("https");
 
 // mongoose.connect("mongodb://localhost:27017/Journal", { useNewUrlParser: true, useUnifiedTopology: true, });
-const dbUrl = "mongodb+srv://Pradum1234:Pradum1234Pradum1234@cluster0.wcsi0y7.mongodb.net/Bank?retryWrites=true&w=majority"
+// const dbUrl = "mongodb+srv://Pradum1234:Pradum1234Pradum1234@cluster0.wcsi0y7.mongodb.net/Bank?retryWrites=true&w=majority"
+const dbUrl = "mongodb+srv://Pradum1234:Pradum1234@cluster0.tc1qtbs.mongodb.net/Bank?retryWrites=true&w=majority"
 const connectionParams = { useNewUrlParser: true, useUnifiedTopology: true, }
 mongoose.connect(dbUrl, connectionParams).then(() => {
   console.log("connected to mongodb");
