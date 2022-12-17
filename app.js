@@ -473,50 +473,56 @@ const clint20 = new custumerdb({
     // allupdatedTime: { type: Date, default: Date.now },
   }
 });
-
-
-man.save();
-man1.save();
-man2.save();
-man3.save();
-man4.save();
-man5.save();
-man6.save();
-man7.save();
-man8.save();
-man9.save();
-man10.save();
-man11.save();
-man12.save();
-man13.save();
-man14.save();
-man15.save();
-man16.save();
-man17.save();
-man18.save();
-man19.save();
-man20.save();
-clint1.save();
-clint2.save();
-clint3.save();
-clint4.save();
-clint5.save();
-clint6.save();
-clint7.save();
-clint8.save();
-clint9.save();
-clint10.save();
-clint11.save();
-clint12.save();
-clint13.save();
-clint14.save();
-clint15.save();
-clint16.save();
-clint17.save();
-clint18.save();
-clint19.save();
-clint20.save();
-
+custumerdb.count({}, function( err, count){
+  if(err){
+    console.log(err);
+  }else{
+    console.log( "Number of users:", count );
+    if(count == 0){
+      man.save();
+      man1.save();
+      man2.save();
+      man3.save();
+      man4.save();
+      man5.save();
+      man6.save();
+      man7.save();
+      man8.save();
+      man9.save();
+      man10.save();
+      man11.save();
+      man12.save();
+      man13.save();
+      man14.save();
+      man15.save();
+      man16.save();
+      man17.save();
+      man18.save();
+      man19.save();
+      man20.save();
+      clint1.save();
+      clint2.save();
+      clint3.save();
+      clint4.save();
+      clint5.save();
+      clint6.save();
+      clint7.save();
+      clint8.save();
+      clint9.save();
+      clint10.save();
+      clint11.save();
+      clint12.save();
+      clint13.save();
+      clint14.save();
+      clint15.save();
+      clint16.save();
+      clint17.save();
+      clint18.save();
+      clint19.save();
+      clint20.save();
+    }
+  }
+});
 
 const app = express();
 app.set('view engine', 'ejs');

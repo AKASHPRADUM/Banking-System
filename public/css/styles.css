@@ -16,6 +16,7 @@ body {
     font-size: 20px;
 
 }
+
 .bgColour {
     background: linear-gradient(to left, #03baf1, #db70dda6);
 }
@@ -50,7 +51,9 @@ body {
     counter-increment: serial-number;
     content: counter(serial-number);
 }
-
+.logologo{
+    height: 200px;
+}
 .button1 {
     display: inline-block;
     background: #484848;
@@ -74,4 +77,14 @@ body {
 .form-signin {
     margin: auto;
     padding: 25px 15%;
+}
+/* ########################## Media Query Small Device ######################### */
+@media screen and (max-width: 1000px) {
+    .sec2{
+        display: none;
+    }
+    .logologo{
+        height:20px;
+        display: block;
+    }
 }
